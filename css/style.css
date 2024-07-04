@@ -1,0 +1,127 @@
+:root {
+    /*COLORS*/
+    --main-color: #8f754f;
+    --heading-color: #303030;
+    --color-gray: #666;
+    --color-gray-2: #444;
+    /* Fontweight */
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-500: 500;
+    /* transition */
+    --transition: all .5s ease;
+    /*Font family*/
+    --custome-font: 'Alegreya', serif, monospace;
+    --normal-font: 'Alegreya Sans', serif, monospace;
+    
+}
+.position-absolute{
+    position: absolute;
+}
+.color-main{
+    color: var(--main-color);
+}
+.heading-color{
+    color: var(--heading-color);
+}
+body {
+    font-family: var(--normal-font);
+    color: var(--color-gray);
+}
+
+/* navbar */
+.navbar{
+border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+transition: var(--transition);
+}
+
+.navbar .logo{
+    width: 15%;
+}
+.navbar .nav-link {
+    color: #fff !important;
+}
+.navbar .navbar-toggler {
+    background-color: #66666666;
+    color: rgba(255, 255, 255, .55) ;
+    border-color: rgba(255, 255, 255, .1);
+}
+.nav-link {
+    padding:  15px !important;
+    font-size: 13px;
+    font-weight: var(--fw-600)!important;
+    letter-spacing: .5px;
+}
+.navbar a:hover,
+.nav-link.active {
+    color: var(--main-color) !important
+}
+/* navbar mediaquery */
+@media screen and (max-width: 767px) {
+    .navbar .logo {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 991px){
+    .navbar-collapse{
+        margin-top: 2%;
+        background-color: #fff;
+    }
+    .navbar .nav-link {
+        color: var(--heading-color) !important;
+    }
+
+    .nav-link.active {
+        color: var(--main-color) !important
+    }
+}
+
+/* Home */
+.home {
+    background-image: url("../img/background-image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.pointer {
+    width: 30px;
+    height: 50px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.pointer span {
+    height: 8px;
+    width: 8px;
+    top: 3px;
+    animation-name: moveTobottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes moveTobottom {
+    0% {
+            opacity: 0;
+            top: 10%;
+        }
+    
+        50% {
+            opacity: 1;
+            top: 50%;
+        }
+    
+        100% {
+            opacity: 0;
+            top: 80%;
+        }
+}
+
+section{
+    padding: 3%;
+}
+.our, .contact{
+    background-color:rgb(242, 242, 242);
+}
+/* img{
+    height: auto;
+} */
