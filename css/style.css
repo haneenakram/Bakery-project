@@ -15,6 +15,10 @@
     --normal-font: 'Alegreya Sans', serif, monospace;
     
 }
+.gray-footer{
+    background-color: rgb(64, 61, 56);
+    color: #a29c9c;
+}
 .position-absolute{
     position: absolute;
 }
@@ -125,3 +129,47 @@ section{
 /* img{
     height: auto;
 } */
+/* footer */
+
+.footer a{
+    color: #a29c9c;
+    transition: var(--transition);
+}
+.footer a:hover{
+    color: white;
+}
+.footer h2{
+    color: white;
+}
+.custome-border {
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgba(255, 255, 255, .5)
+}
+.footer .social li {
+    color: var(--main-color);
+    cursor: pointer;
+    transition: var(--transition)
+}
+
+.footer .social li:hover {
+    transform: scale(1.1);
+}
+
+#f:hover {
+    color: #4267B2
+}
+
+#g:hover {
+    color: #db4a39
+}
+
+#l:hover {
+    color: #0072b1;
+}
+
+#t:hover {
+    color: #00acee;
+}
+footer{
+    background-color: rgb(53, 51, 48);
+}
