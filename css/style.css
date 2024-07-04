@@ -33,6 +33,59 @@ body {
     color: var(--color-gray);
 }
 
+/*demo-panel-menu*/
+.demo-panel-menu {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 7px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 3;
+}
+
+.demo-panel-menu div {
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.demo-panel-menu span {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-weight: 500;
+    background-color: rgb(31, 98, 197);
+    padding: 2px 8px;
+    border-radius: 3px;
+    display: none;
+}
+
+.demo-panel-menu div img {
+    width: 100%;
+}
+
+.demo-panel-menu .dimo-1 {
+    margin-bottom: 20px;
+}
+
+.demo-1 span {
+    left: -126px;
+}
+
+.demo-2 span {
+    left: -138px;
+}
+
+.demo-1:hover span {
+    display: block;
+}
+
+.demo-2:hover span {
+    display: block;
+}
+
 /* navbar */
 .navbar{
 border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
@@ -87,6 +140,27 @@ transition: var(--transition);
     background-position: center center;
     background-attachment: fixed;
     position: relative;
+}
+.home button {
+    margin-right: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.learn-more {
+    background-color: #8f754f;
+    border: none;
+}
+
+.contact-us {
+    border: 1px solid #fff;
+}
+
+.learn-more:hover,
+.contact-us:hover {
+    background-color: #fff !important;
+    color: var(--heading-color) !important;
 }
 .pointer {
     width: 30px;
